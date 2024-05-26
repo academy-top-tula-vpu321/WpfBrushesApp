@@ -1,0 +1,69 @@
+﻿<Window x:Class="WpfBrushesApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfBrushesApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <Border Opacity="1" Background="White">
+            <Grid>
+                <TextBox x:Name="txt" Text="jlkjlkjlkj"/>
+                <!--<Border x:Name="brd" Height="100">
+                    <Border.Background>
+                        <SolidColorBrush Color="HotPink" Opacity="1"/>
+                    </Border.Background>
+                </Border>-->
+            </Grid>
+        </Border>
+        <Border Height="300">
+            <!--<Border.Background>
+                --><!--<LinearGradientBrush StartPoint="0,0"
+                                     EndPoint="0,1">
+                    <GradientStop Color="DarkRed" Offset="0"/>
+                    <GradientStop Color="Red" Offset="0.2"/>
+                    <GradientStop Color="Red" Offset="0.8"/>
+                    <GradientStop Color="DarkRed" Offset="1"/>
+                </LinearGradientBrush>-->
+                <!--<RadialGradientBrush RadiusX="0.5"
+                                     RadiusY="0.5"
+                                     Center="0.1, 0.5">
+                    <GradientStop Color="Red" Offset="0"/>
+                    <GradientStop Color="Blue" Offset="2"/>
+                </RadialGradientBrush>--><!--
+            </Border.Background>-->
+            <!--<Border.Background>
+                <ImageBrush ImageSource="/icon-phone.jpg"
+                            Stretch="Uniform"
+                            Viewbox="0,0,1,1"
+                            TileMode="FlipXY"
+                            Viewport="0,0,0.2,0.2"/>
+            </Border.Background>-->
+            <!--<Border.Background>
+                <DrawingBrush Viewport="0,0,0.5,0.5" TileMode="Tile">
+                    <DrawingBrush.Drawing>
+                        <DrawingGroup>
+                            <ImageDrawing ImageSource="/icon1.png" 
+                                          Rect="0,0,1,1"/>
+                            <GeometryDrawing Brush="Red">
+                                --><!--<GeometryDrawing.Pen>
+                                    <Pen Brush="Blue"/>
+                                </GeometryDrawing.Pen>--><!--
+                                <GeometryDrawing.Geometry>
+                                    <RectangleGeometry Rect="0.1,0.1,0.5,0.5"/>
+                                </GeometryDrawing.Geometry>
+                            </GeometryDrawing>
+                        </DrawingGroup>
+                        
+                    </DrawingBrush.Drawing>
+                </DrawingBrush>
+            </Border.Background>-->
+
+            <Border.Background>
+                <VisualBrush Visual="{Binding ElementName=txt}"
+                             Viewbox="0,0,0.05,1"/>
+            </Border.Background>
+        </Border>
+    </StackPanel>
+</Window>
